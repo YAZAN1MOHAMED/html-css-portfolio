@@ -1,0 +1,22 @@
+
+.skills {
+    grid-template-columns: 1fr;
+    row-gap: var(--gutter);
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gutter);
+}
+
+.skills__item {
+    font-size: var(--font-size-38);
+    font-weight: var(--font-weight-bold);
+
+}
+
+.skills__experience {
+    margin-top: 1rem;
+    font-size: var(--font-size-20);
+}

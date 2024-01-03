@@ -1,0 +1,106 @@
+@import "./mixins";
+.bio {
+    @include towColumns($colGap: 7.4rem);
+}
+
+.bio__heading {
+    font-size: var(--font-size-70);
+    font-weight: var(--font-weight-bold);
+}
+
+.bio__aboutMe {
+    font-family: var(--font-family-poppins);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-20);
+    margin: 3rem 0 8rem;
+}
+
+.bio__name {
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.bio__almdrasa {
+    color: var(--color-green);
+}
+
+.bio__facebook {
+    color: var(--color-blue);
+}
+
+.bio__twitter {
+    color: var(--color-light-blue);
+}
+
+.bio__linkedin {
+    color: var(--color-darker-blue);
+
+}
+
+.bio__Youtube {
+    color: var(--color-red);
+
+}
+
+.bio__links {
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--font-size-24);
+    text-decoration: none;
+
+}
+
+.bio__say-hi-link {
+    background-color: var(--color-link-bg);
+    color: var(--color-white);
+    padding: 0.7rem 4.7rem;
+
+}
+
+.bio__gitHub {
+    padding: 0.7rem 0;
+    margin-inline-start: 1.4rem;
+
+}
+
+.bio__arrow {
+
+    display: inline-block;
+    transform: translateX(2px);
+    animation: move 1s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0.5rem);
+    }
+
+    35% {
+        transform: translateX(-0.5rem);
+    }
+
+    100% {
+        transform: translateX(2px);
+    }
+}
+
+.bio__picContent {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-self: end;
+
+}
+
+.bio__pic {
+    max-width: 100%;
+}
+
+.bio__picContent::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-box-img);
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    border-radius: 3rem 3rem 0 0;
+    box-shadow: 2px 8px 38px rgba(0, 0, 0, 0.15);
+}

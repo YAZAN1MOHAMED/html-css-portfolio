@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Yazan Mohamed</title>
+</head>
+
+<body>
+    <div class="container">
+        <video class="video-loop" autoplay muted loop>
+            <source src="video-loop.mp4" type="video/mp4">
+        </video>
+        <header class="header">
+            <label for="menu" class="burgerMenu">
+                <span class="burgerMenu__bar"></span>
+                <span class="burgerMenu__bar"></span>
+                <span class="burgerMenu__bar"></span>
+            </label>
+            <input type="checkbox" name="menu" id="menu" class="burgerMenu__checkbox">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li><a href="#bio" class="navigation__link navigation__bio">Bio</a></li>
+                    <li><a href="#skills" class="navigation__link navigation__skills">Skills</a></li>
+                    <li><a href="#media" class="navigation__link navigation__media">Media</a></li>
+                    <li><a href="#projects" class="navigation__link navigation__projects">projects</a></li>
+                    <li><a href="#clients" class="navigation__link navigation__clients">clients</a></li>
+                    <li><a href="#contact" class="navigation__link navigation__contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="toggle">
+                <h3 class="toggle__title">Switch theme</h3>
+                <input type="checkbox" name="toggle checkbox" id="toggle" class="toggle__checkbox">
+                <label for="toggle" class="toggle__label"></label>
+            </div>
+        </header>
+        <section class="bio section" id="bio">
+            <div class="bio__data">
+                <h1 class="bio__heading">Hi There, I'M A Passionate Front end developer</h1>
+                <p class="bio__aboutMe">
+                    My name is <span class="bio__name">Yazan Mohamed</span>, a front end student &commat;
+                    <a href="https://almdrasa.com/" class="bio__almdrasa">almdrasa</a>, and a content creator
+                    who willing to publish content on
+                    <a href="#" class="bio__facebook">Facebook</a>,
+                    <a href="#" class="bio__twitter">X (Twitter)</a>,
+                    <a href="#" class="bio__linkedin">LinkedIn</a> and
+                    <a href="#" class="bio__Youtube">Youtube</a>.
+                </p>
+                <a href="#hi" class="bio__links bio__say-hi-link">Say Hi</a>
+                <a href="#" class="bio__links bio__gitHub">See my gitHub <span class="bio__arrow">&rarr;</span></a>
+            </div>
+            <div class=" bio__picContent">
+                <img src="images/yazan_mohamed-removebg-preview.png" class="bio__pic"
+                    alt="A picture of yazan mohamed smiling and wearing an of white shirt">
+            </div>
+        </section>
+        <section class="skills section section--with-bg" id="skills">
+            <h2 class="h2-heading">Skills</h2>
+            <ul class="skills__list">
+                <li>
+                    <h3 class="skills__item">HTML</h3>
+                    <p class="skills__experience">1 year</p>
+                </li>
+                <li>
+                    <h3 class="skills__item">CSS</h3>
+                    <p class="skills__expearince">1 year</p>
+                </li>
+                <li>
+                    <h3 class="skills__item">Java Script</h3>
+                    <p class="skills__expearince">0 year</p>
+                </li>
+                <li>
+                    <h3 class="skills__item">React (soon)</h3>
+                    <p class="skills__expearince">0 year</p>
+                </li>
+                <li>
+                    <h3 class="skills__item">Redux (soon)</h3>
+                    <p class="skills__expearince">0 year</p>
+                </li>
+                <li>
+                    <h3 class="skills__item">Next.js (soon)</h3>
+                    <p class="skills__expearince">0 year</p>
+                </li>
+            </ul>k
+        </section>
+        <section class="media section" id="media">
+            <h2 class="h2-heading">Liked video</h2>
+            <video class="media__video" poster="./images/thumbnail.jpg" controls>
+                <source src="./video.mp4" type="video/mp4">
+                your browser doesn't support videos
+            </video>
+        </section>
+        <section class="projects section" id="projects">
+            <h2 class="h2-heading">My featured <br> projects</h2>
+
+            <img src="./images/elzero_project.png" alt="a snippet from Elzero tmeplate project" class="projects__img">
+            <div class="projects__project">
+                <h3 class="projects__projectTitle">Elzero <br> template</h3>
+                <p class="projects__information">one of the projects that I have complete to practice on my HTML and CSS
+                    skills,while applying various of layout methodologies like flex box and grid layouts,</p>
+                <a href="https://yazan1mohamed.github.io/html-css-template3/" class="projects__link" target="_blank">Go
+                    to the
+                    website!</a>
+            </div>
+            <div class="projects__project">
+                <h3 class="projects__projectTitle">Kasper <br> template</h3>
+                <p class="projects__information">one of the projects that I have complete to practice on my HTML and CSS
+                    skills,while applying various of layout methodologies like flex box and grid layouts,</p>
+                <a href="https://yazan1mohamed.github.io/html-css-template2/" class="projects__link" target="_blank">Go
+                    to the
+                    website!</a>
+            </div>
+            <img src="./images/kasper_project.png" alt="a sippet from kasper web page" class="projects__img">
+        </section>
+
+        <section class="clinets section section--with-bg" id="clients">
+            <h2 class="h2-heading">What my <br> clients Says</h2>
+
+            <div class="clients__opinions">
+                <div class="clients__wrapper">
+                    <p class="clients__clientOpinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                        ipsum dolore non voluptatum eveniet esse consectetur voluptatem voluptate dolores, atque
+                        similique nisi illum ullam. Labore, deserunt? Quia nesciunt fugiat minima</p>
+                    <p class="clients__clientOpinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                        ipsum dolore non voluptatum eveniet esse consectetur voluptatem voluptate dolores, atque
+                        similique nisi illum ullam. Labore, deserunt? Quia nesciunt fugiat minima</p>
+                    <p class="clients__clientOpinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                        ipsum dolore non voluptatum eveniet esse consectetur voluptatem voluptate dolores, atque
+                        similique nisi illum ullam. Labore, deserunt? Quia nesciunt fugiat minima</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div>
+                <p class="contact__description">Feel free to reach out to me any time. We can talk over email,
+                    especially since we may be a few time zones away.
+                </p>
+                <a href="mailto:yazan4m2@gmail.com" class="contact__email">My email</a>
+                <div class="contact__social">
+                    <a href="https://github.com/YAZAN1MOHAMED">
+                        <img src="images/brand/github.svg" alt="My gitHub" class="contact__icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yazan-mohamed-developer">
+                        <img src="./images/brand/LinkedIn.svg" alt="My linkedIn" class="contact__icon">
+                    </a>
+                </div>
+            </div>
+            <div class="contact__formContent">
+                <h2 class="h2-heading">LET'S WORK <br> TOGETHER!</h2>
+                <form action="results.html">
+                    <div class="contact__inputsContainer">
+                        <input id="hi" type="text" class="contact__input" placeholder="Your name" name="full name"
+                            required>
+                        <input type="tel" class="contact__input" placeholder="Phone No." name="Phone No."
+                            pattern="[0-9]{10}" required>
+                    </div>
+                    <textarea name="message" class="contact__input contact__textarea" placeholder="Send message"
+                        name="message" required></textarea>
+                    <button class="contact__send">Send message</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            &copy; 2024 by Yazan Mohamed
+        </footer>
+    </div>
+
+</body>
+
+</html>

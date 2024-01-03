@@ -1,0 +1,44 @@
+
+.projects {
+    column-gap: 7.4rem;
+    row-gap: 7.5rem;
+}
+
+
+.projects__projectTitle {
+    font-size: var(--font-size-38);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 2.5rem;
+}
+
+.projects__project {
+    align-self: center;
+}
+
+.projects__information {
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.projects__link {
+    color: var(--color-darker-blue);
+    font-family: var(--font-family-poppins);
+    position: relative;
+    font-size: var(--font-size-15);
+}
+
+.projects__link::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url(./images/external-icon.png);
+    background-size: contain;
+}
+
+.projects__img {
+    max-width: 100%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+
+}

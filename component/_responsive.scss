@@ -1,0 +1,124 @@
+@media (max-width:1000px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width:800px) {
+    .container {
+        row-gap: 8rem;
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+
+    }
+
+    .bio__picContent {
+        grid-row: 1rem;
+        justify-self: center;
+        margin-bottom: 4rem;
+        order: -1;
+    }
+
+    .skills__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        row-gap: 6rem;
+        justify-content: center;
+    }
+
+    .projects__project:nth-of-type(2) {
+        order: 1;
+    }
+
+    .clients__opinions {
+        font-size: var(--font-size-24);
+    }
+
+    .contact {
+        row-gap: 6rem;
+    }
+
+    .contact__formContent {
+        order: -1;
+    }
+}
+
+@media (max-width:500px) {
+    html {
+        font-size: 8px;
+        scroll-padding-top: 16rem;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .header::before {
+        width: 100vw;
+    }
+
+    .navigation {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        top: 0;
+        transition: var(--transition-timing);
+        z-index: -2;
+        padding: 3rem 0;
+        background-color: var(--color-background);
+        border-bottom: 0.1rem solid var(--color-text);
+    }
+
+    .burgerMenu__checkbox:checked+.navigation {
+        top: 100%;
+    }
+
+    .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: center;
+        gap: 0.75rem;
+        width: 4.375rem;
+    }
+
+    .burgerMenu__bar {
+        width: 4.375rem;
+        height: 0.3rem;
+        background-color: var(--color-text);
+        align-items: center;
+        transition: var(--transition-timing);
+    }
+
+    .header:has(.burgerMenu__checkbox:checked) .burgerMenu__bar:first-child {
+        transform: translateY(10px) rotate(40deg);
+
+    }
+
+    .header:has(.burgerMenu__checkbox:checked) .burgerMenu__bar:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header:has(.burgerMenu__checkbox:checked) .burgerMenu__bar:last-child {
+        transform: translateY(-7px) rotate(-40deg);
+    }
+
+    .toggle {
+        padding: 3rem 0rem;
+    }
+
+}
+
+@media (max-width:350px) {
+    .section--with-bg::before {
+        width: 105%;
+        left: -5%;
+    }
+}

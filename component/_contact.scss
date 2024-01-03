@@ -1,0 +1,56 @@
+@import "./mixins";
+
+.contact {
+    @include towColumns($colGap: 20rem);
+    align-items: center;
+
+}
+
+.contact__description {
+    font-size: var(--font-size-20);
+    line-height: 1.9;
+}
+
+.contact__email {
+    font-weight: var(--font-weight-bold);
+    margin: 2.5rem 0;
+}
+
+.contact__icon {
+    transition: var(--transition-timing);
+}
+
+.contact__icon:hover {
+    transform: scale(1.2);
+}
+
+.contact__inputsContainer {
+    display: flex;
+    gap: 3rem;
+}
+
+.contact__input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid var(--color-input-border);
+    background: transparent;
+}
+
+.contact__input:focus {
+    outline: transparent;
+}
+
+.contact__textarea {
+    width: 100%;
+    margin-top: 4rem;
+    resize: none;
+}
+
+.contact__send {
+    background-color: var(--color-link-bg);
+    color: var(--color-white);
+    padding: 1.7rem 1.8rem;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-24);
+    margin-top: 4rem;
+}
